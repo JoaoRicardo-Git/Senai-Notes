@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F5F8;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #ffff;
+    border: solid, 1px #E0E4EA;
+    width: 540px;
+    height: 503px;
+
+    gap: 8px;
+}
+
+.logo {
+    width: 444x;
+    height: 38px;
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    display: flex;
+    align-items: center;
+    font-family: roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    
+
+}
+
+.text p {
+    font-family: text-preset, sans-serif;
+    font-size: 12x;
+    font-weight: 400;
+    color: #525866;
+
+}
+
+input {
+    width: 444px;
+    height: 42px;
+    border-radius: 5px;
+    padding: 4px;
+
+
+}
+
+.itens {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 8px;
+}
+
+.btn-login {
+    background-color: #335CFF;
+    width: 444px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.btn-login:hover {
+    background-color: #525866;
+    color: #335CFF;
+}
+
+.btn-login p {
+    font-size: 14px;
