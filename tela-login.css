@@ -8,7 +8,7 @@
 
 }
 
-header {
+.conteiner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ header {
 }
 
 
-.conteiner {
+.painel-central {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,7 +51,7 @@ header {
     font-family: roboto, sans-serif;
     font-size: 24px;
     font-weight: 700;
-    
+
 
 }
 
@@ -95,3 +95,12 @@ input {
 
 .btn-login p {
     font-size: 14px;
+}
+
+.criar {
+    display: flex;
+}
+
+.criar a {
+    margin-left: 5px;
+}
