@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.conteiner{
+    display: flex;
+}
+
+.left {
+    background-color: aqua;
+    width: 20vw;
+    height: 100vh;
+}
+
+.cabecalho {
+    background-color: blue;
+    width: 80vw;
+    height: 70px;
+
+}
