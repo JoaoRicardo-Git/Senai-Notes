@@ -1,5 +1,5 @@
 import "./login.css"    // Conecta o CSS desta página
-import Logo from "../../assets/imgs/logo.svg"   // Importa a imagem para o <img>
+import Logo from "../../assets/imgs/Logo Wrapper.svg"   // Importa a imagem para o <img>
 import { useState } from "react";   // IMPORTANDO O HOOK
 
 function Login() {
@@ -20,7 +20,7 @@ function Login() {
         let response = await fetch("http://localhost:3000/users", {
 
             Headers: {
-                "Content-Type": "application/json" 
+                "Content-Type": "application/json"
             },
             method: "POST",
             body: JSON.stringify({
@@ -63,39 +63,40 @@ function Login() {
 
         <>
 
-         <main className="conteiner">
+            <main className="conteiner">
 
-<div className="painel-central">
+                <div className="painel-central">
 
-    <img src={Logo} alt="logo-login"/>
-    <div className="text">
-        <h1> Welcome to Note </h1>
-        <p>Please log in to continue</p>
-    </div>
+                    <img src={Logo} alt="logo-login" />
+                    <div className="text">
+                        <h1> Welcome to Note </h1>
+                        <p>Please log in to continue</p>
 
-    <div className="inpt">
+                    </div>
 
-        <p>Email Address</p>
+                    <div className="inpt">
 
-        <input type="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="email@exaple.com"/>
+                        <p>Email Address</p>
 
-        <div className="itens">
-            <p className="pass">Password</p>
-            <a href="">Forgot</a>
-        </div>
+                        <input type="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="email@exaple.com" />
 
-        <input type="password" valuee={password} onChange={event => setPassword(event.target.value)}/>
-    </div>
+                        <div className="itens">
+                            <p className="pass">Password</p>
+                            <a href="">Forgot</a>
+                        </div>
 
-    <button className="btn-login" onClick={() => onLoginClick()}>Login</button>
+                        <input type="password" valuee={password} onChange={event => setPassword(event.target.value)} />
+                    </div>
 
-    <div className="criar">
-        <p>No account yet?</p>
-        <a href="">Sign Up</a>
-    </div>
+                    <button className="btn-login" onClick={() => onLoginClick()}>Login</button>
 
-</div>
-</main>
+                    <div className="criar">
+                        <p>No account yet?</p>
+                        <a href="">Sign Up</a>
+                    </div>
+
+                </div>
+            </main>
 
         </>
 
