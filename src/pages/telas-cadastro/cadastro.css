@@ -33,8 +33,9 @@
 }
 
 .logo {
+    margin-top: 45px;
     width: 444x;
-    height: 38px;
+    height: 39px;
 
 }
 
@@ -60,18 +61,21 @@
     font-size: 12x;
     font-weight: 400;
     color: #525866;
+    width: 444px;
+    text-align: center;
 
 }
 
 input {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 444px;
     height: 42px;
     border-radius: 5px;
     padding: 4px;
-    margin: 5px;
-    
+    margin-top: 5px;
+
 
 }
 
@@ -100,3 +104,19 @@ input {
     font-size: 14px;
 }
 
+.circle {
+    display: flex;
+
+}
+
+.circle p {
+    margin-left: 5px;
+}
+
+.txt-login {
+    display: flex;
+}
+
+.txt-login a {
+    margin-left: 5px;
+}

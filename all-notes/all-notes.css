@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    display: flex;
+}
+
+.left {
+    background-color: aqua;
+    width: 20vw;
+    height: 100vh;
+}
+
+.cabecalho {
+    width: 80vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho-right{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.cabecalho-right input {
+    width: 300px;
+    height: 44px;
+}
