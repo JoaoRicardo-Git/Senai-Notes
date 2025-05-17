@@ -1,5 +1,8 @@
-import AllNotes from "../../Componentes/AllNotes";
+import AllNotes from "../../Componentes/All-notes";
+import Cabecalho from "../../Componentes/cabecalho";
 import LeftPanel from "../../Componentes/Left-panel";
+import MenuLateral from "../../Componentes/Settings-menu";
+import TelaInfo from "../../Componentes/Tela-Info";
 
 function TelaDeNotas() {
 
@@ -11,6 +14,12 @@ function TelaDeNotas() {
 
                 <AllNotes />
             </div>
+
+        <Cabecalho/>
+
+        <TelaInfo/>
+
+        <MenuLateral/>
 
         </>
 
