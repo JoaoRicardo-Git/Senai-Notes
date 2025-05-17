@@ -14,10 +14,10 @@ function LeftPanel() {
 
                 <div className="sidebar-up">
 
-                    <img className="Logo-allNotes" src={Logo} alt="Imagem Logo" />
+                    <img className="imgsPrime-allNotes" src={Logo} alt="Imagem Logo" />
 
-                    <button className="bnt-prime"> <img src={imgCasa} alt="Img Home" />All Notes</button>
-                    <button className="bnt"> <img src={imgArquivo} alt="Img Archive" />Archived Notes</button>
+                    <button className="bnt-prime"> <img className="imgs-allNotes" src={imgCasa} alt="Img Home" />All Notes</button>
+                    <button className="bnt"> <img className="imgs-allNotes" src={imgArquivo} alt="Img Archive" />Archived Notes</button>
 
                 </div>
 
@@ -25,7 +25,7 @@ function LeftPanel() {
 
                     <p className="subTitle">Tags</p>
 
-                    <button className="tag"> <img src={tag} alt="Img Tag" /> Cooking </button>
+                    <button className="tag"> <img className="imgs-tags" src={tag} alt="Img Tag" /> Cooking </button>
 
                 </div>
 
