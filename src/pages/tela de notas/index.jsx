@@ -9,10 +9,11 @@ function TelaDeNotas() {
     return (
 
         <>
+            <div className="conteiner-notas">
+                <LeftPanel />
 
-        <LeftPanel/>
-
-        <AllNotes/>
+                <AllNotes />
+            </div>
 
         <Cabecalho/>
 
