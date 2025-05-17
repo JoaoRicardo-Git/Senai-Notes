@@ -1,5 +1,5 @@
 import "./login.css"    // Conecta o CSS desta página
-import Logo from "../../assets/imgs/Logo Wrapper.svg"   // Importa a imagem para o <img>
+import Logo from "../../assets/imgs/Imgs Left-panel/LogoWrapper.svg"   // Importa a imagem para o <img>
 import { useState } from "react";   // IMPORTANDO O HOOK
 
 function Login() {

@@ -6,10 +6,7 @@
 
 .sidebar {
 
-    height: 100vh;
-    width: 15vw;
-
-    background-color: aquamarine;
+   
 
 }
 
@@ -19,6 +16,11 @@
 
     flex-direction: column;
     align-items: center;
+
+    height: 20vh;
+    width: 15vw;
+
+    background-color: aquamarine;
     
 }
 
@@ -63,3 +65,43 @@ img {
     background-color: white;
 
 }
+
+.sidebar-low {
+
+    height: 80vh;
+    width: 15vw;
+
+    background-color: rgb(113, 113, 233);
+
+    flex-direction: column;
+    justify-items: center;
+    
+}
+
+.subTitle {
+
+    display: flex;
+
+    width: 240px;
+    height: 35px;
+
+    align-items: center;
+
+    background-color: blueviolet;
+
+}
+
+.tag {
+
+    display: flex;
+
+    align-items: center;
+    text-align: start;
+
+    width: 240px;
+    height: 40px;
+
+    margin-top: 15px;
+
+}
+
