@@ -1,4 +1,6 @@
 import "./LeftPanel.css"
+import "../../assets/styles/global.css"
+
 import Logo from "../../assets/imgs/Imgs Left-panel/LogoWrapper.svg"
 import imgCasa from "../../assets/imgs/Imgs Left-panel/Home.svg"
 import imgArquivo from "../../assets/imgs/Imgs Left-panel/Archive.svg"

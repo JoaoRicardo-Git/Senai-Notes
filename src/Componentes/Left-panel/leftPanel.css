@@ -1,14 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: 'Roboto';
-    font-size: 15px;
-}
-
 .left-Panel {
+
+    display: flex;
+
+    flex-direction: column;
 
     border-right: 1px solid #E0E4EA;
 
@@ -25,7 +19,7 @@
     width: 15vw;
 
     background-color: white;
-    
+
 }
 
 .imgsPrime-allNotes {
@@ -88,7 +82,7 @@
 
     flex-direction: column;
     justify-items: center;
-    
+
 }
 
 .subTitle {
@@ -130,4 +124,3 @@
     margin-right: 7px;
 
 }
-

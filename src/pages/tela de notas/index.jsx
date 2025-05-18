@@ -9,17 +9,22 @@ function TelaDeNotas() {
     return (
 
         <>
+
+         
+
             <div className="conteiner-notas">
+
+                <Cabecalho/>
+                
                 <LeftPanel />
 
                 <AllNotes />
+
+                <TelaInfo/>
+
+                <MenuLateral/>
+
             </div>
-
-        <Cabecalho/>
-
-        <TelaInfo/>
-
-        <MenuLateral/>
 
         </>
 
