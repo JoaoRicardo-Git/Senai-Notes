@@ -4,8 +4,13 @@ import "../../assets/styles/global.css"
 import tag from "../../assets/imgs/Imgs Left-panel/Tag.svg"
 import imgTema from "../../assets/imgs/imgs tela-info/ImgsTema.png"
 import imgTime from "../../assets/imgs/imgs tela-info/Circle Clock.svg"
+import { useState } from 'react'
 
 function TelaInfo() {
+
+    const [title, setTitle] = useState("");
+    const [tags, setTags] = useState("");
+    const [description, setDescription] = useState("");
 
     return (
 
@@ -17,20 +22,32 @@ function TelaInfo() {
 
                     <img className='ImgTema' src={imgTema} alt="Imagem do Tema" />
 
-                    <h1 className='titleTema'>React Performance Optimization</h1>
+                    <input
+                        className="createTitle"
+                        type="text"
+                        value={title}
+                        onChange={e => setTitle(e.target.value)}
+                        placeholder='Titulo'
+                    />
 
                     <div className='infos'>
 
                         <div className='info-up'>
 
-                            <h7 className="tagInfo"> <img className="imgs-tags" src={tag} alt="Img Tag" /> Tags </h7>
-                            <p>Dev, React</p>
+                            <p className="tagInfo"> <img className="imgs-tags" src={tag} alt="Img Tag" /> Tags </p>
+                            <input
+                                type="text"
+                                value={tags}
+                                placeholder="Coloque suas Tags..."
+                                onChange={e => setTags(e.target.value)}
+                            />
+
 
                         </div>
 
                         <div className='info-low'>
 
-                            <h7 className="tagInfo"> <img className="imgs-tags" src={imgTime} alt="Img Relogio" /> Last edited </h7>
+                            <p className="tagInfo"> <img className="imgs-tags" src={imgTime} alt="Img Relogio" /> Last edited </p>
                             <p>29 Oct 2024</p>
 
                         </div>
@@ -42,27 +59,12 @@ function TelaInfo() {
                 <div className="telaInfo-low">
 
                     <div className='telaInfo-center'>
-
-                        <div className='infoText'>
-
-                            <p>Key performance optimization techniques:</p>
-
-                            <h7 className="subTitle">1. Code Splitting </h7>
-                            <p>- Use React.lazy() for route-based splitting</p>
-                            <p>- Implement dynamic imports for heavy components</p>
-
-                            <h7 className="subTitle"> 2.	Memoization </h7>
-                            <p>- useMemo for expensive calculations</p>
-                            <p>- useCallback for function props</p>
-                            <p>- React.memo for component optimization</p>
-
-                            <h7 className="subTitle"> 3. Virtual List Implementation </h7>
-                            <p>- Use react-window for long lists</p>
-                            <p>- Implement infinite scrolling</p>
-
-                            <p>TODO: Benchmark current application and identify bottlenecks</p>
-
-                        </div>
+                        <textarea
+                            className='infoText'
+                            placeholder="Coloque suas notas aqui..."
+                            value={description}
+                            onChange={e => setDescription(e.target.value)}
+                        />
 
                         <div className='bnts'>
 

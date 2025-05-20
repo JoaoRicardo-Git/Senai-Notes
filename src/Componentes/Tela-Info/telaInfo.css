@@ -34,7 +34,7 @@
 
 }
 
-.titleTema {
+.createTitle {
 
     width: 700px;
 
@@ -42,6 +42,8 @@
 
     font-size: 30px;
     margin-top: 17px;
+
+    border: none;
 
 }
 
@@ -63,6 +65,12 @@
     display: flex;
 
     align-items: center;
+
+}
+
+.info-up input {
+
+    border: none;
 
 }
 
@@ -121,6 +129,8 @@
 
     justify-content: center;
 
+    border: none;
+
 }
 
 .infoText p {
@@ -158,6 +168,8 @@
     color: white;
     border: none;
 
+    cursor: pointer;
+
 }
 
 .bntCancel {
@@ -169,6 +181,8 @@
 
     border: none;
     background-color: transparent;
+
+    cursor: pointer;
 
 }
 
