@@ -10,12 +10,10 @@ function TelaDeNotas() {
 
         <>
 
-         
-
             <div className="conteiner-notas">
 
                 <Cabecalho/>
-                
+
                 <LeftPanel />
 
                 <AllNotes />
