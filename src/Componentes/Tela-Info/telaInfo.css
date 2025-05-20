@@ -113,6 +113,13 @@
 
 }
 
+.telaInfo-center textarea {
+
+    border-bottom: 1px solid #E0E4EA;
+    border-top: 1px solid #E0E4EA;
+
+}
+
 .infoText {
 
     display: flex;
