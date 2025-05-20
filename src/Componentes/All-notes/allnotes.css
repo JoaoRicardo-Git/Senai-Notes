@@ -17,15 +17,18 @@
 }
 
 .right {
-    /* background-color: rgb(100, 56, 56); */
     width: 20vw;
     height: 100vh;
 }
 
 .right-l {
-    /* background-color: aquamarine; */
     width: 20vw;
     height: 100vh;
+}
+
+.title-all {
+    font-size: 27px;
+    margin-left: 21px;
 }
 
 .title {
@@ -49,61 +52,113 @@
     height: 40px;
     gap: 24px;
 }
-.text-tags p{
+
+.text-tags p {
     font-size: 14px;
     color: #717784;
     width: 224px;
     height: 20px;
     margin: 5px;
 }
-.colun-tags{
+
+.colun-tags {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin: 5px;
     gap: 24px;
 }
-.cabecalho{
+
+.cabecalho {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80vw;
+    width: 84vw;
     height: 8vh;
 }
-.inpt{
+
+.inpt-itens {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.inpt {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.cabecalho input{
+
+.inpt input {
+    border: none;
+}
+
+.cabecalho input {
     width: 300px;
     height: 44px;
     border-radius: 8px;
 }
-.btn{
+
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    width: 382px;
     height: 55px;
     margin-top: 5px;
 }
-.btn-create{
+
+.btn-create {
     background-color: #335CFF;
-    width: 242px;
-    height: 41px;
+    width: 331px;
+    height: 50px;
+    font-size: 20px;
     border-radius: 8px;
+    margin-bottom: 15px;
 }
-.react-itens{
+
+.img-react {
+    margin-left: 18px;
+}
+
+.react-itens {
     display: flex;
+    align-items: center;
 }
-.text-react{
+
+.text-react {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
+    gap: 8px;
 }
-.text-into{
+
+.text-into {
     display: flex;
+    gap: 5px;
+    border: black;
+
 }
-.conteiner-notas{
+
+.text-into p {
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 18px;
+    border: 15px solid #E0E4EA;
+    border-radius: 8px;
+    /* background-color: #E0E4EA; */
 }
+
+.conteiner-notas {
+    display: flex;
+
+}
+
+.menu-bar-btn {}
