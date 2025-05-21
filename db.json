@@ -1,4 +1,110 @@
 {
   "users": [
+    {
+      "id": "e66d",
+      "email": "joao@gmail.com",
+      "password": "1127"
+    },
+    {
+      "id": "e2f9",
+      "email": "joao@gmail.com",
+      "password": "1127"
+    },
+    {
+      "id": "be39",
+      "email": "joao@gmail.com",
+      "password": "1127"
+    },
+    {
+      "id": "c620",
+      "email": "joao@gmail.com",
+      "password": "1127"
+    },
+    {
+      "id": "ec5f",
+      "email": "joao@gmail.com",
+      "password": "1127"
+    },
+    {
+      "id": "0251",
+      "email": "joao@gmail.com",
+      "password": "1127"
+    }
+  ],
+  "Notas": [
+    {
+      "id": "9999",
+      "userId": "1",
+      "title": "React Development J&A",
+      "description": "Texto.",
+      "image": "assets/Rectangle.svg",
+      "tags": [
+        "React",
+        "Node"
+      ]
+    },
+    {
+      "id": "4478",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:40:46.144Z"
+    },
+    {
+      "id": "6676",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:40:51.956Z"
+    },
+    {
+      "id": "f880",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:42:08.307Z"
+    },
+    {
+      "id": "ca4f",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:42:33.006Z"
+    },
+    {
+      "id": "4b28",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:44:49.352Z"
+    },
+    {
+      "id": "d9c4",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:45:03.346Z"
+    },
+    {
+      "id": "ec2b",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:47:30.692Z"
+    }
   ]
 }
