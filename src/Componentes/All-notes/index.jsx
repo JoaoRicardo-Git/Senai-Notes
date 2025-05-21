@@ -8,6 +8,7 @@ import perfil from "../../assets/imgs/img-all-notes/Topbar item.svg"
 import { useEffect, useState } from "react"
 
 
+import tags from "../../assets/imgs/img-all-notes/Tag.svg"
 function AllNotes() {
 
     useEffect(() => {
@@ -102,8 +103,8 @@ function AllNotes() {
                         <p> React Performance Optimization</p>
                         <div className="text-into">
 
-                            <p>Dev</p>
-                            <p>react</p>
+                            <p> <img src={tags} alt="tags" /> Dev</p>
+                            <p> <img src={tags} alt="tags" /> react</p>
 
                         </div>
                         <p>29 Oct 2024</p>
@@ -111,7 +112,38 @@ function AllNotes() {
 
 
                     </div>
+
+
+
                 </div>
+                <div className="react-itens">
+
+                    <div className="imge-react">
+
+                        <img className="img-react" src={imgReact} alt="img-react" />
+
+                    </div>
+
+                    <div className="text-react">
+
+                        <p> React Performance Optimization</p>
+                        <div className="text-into">
+
+                            <p> <img src={tags} alt="tags" /> Dev</p>
+                            <p> <img src={tags} alt="tags" /> react</p>
+
+                        </div>
+                        <p>29 Oct 2024</p>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
 
 
             </div>

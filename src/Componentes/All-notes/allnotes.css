@@ -149,7 +149,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
+    width: 63px;
     height: 18px;
     border: 15px solid #E0E4EA;
     border-radius: 8px;
@@ -162,14 +162,27 @@
 }
 
 .menu-bar{
-   width: 250px;
-   height: 260px;
+   width: 84vw;
+   height: 45vh;
    display: flex;
+   justify-content: center;
    align-items: center;
 
 }
 .btn-bar{
+    font-size: 14px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    gap: 10px;
+}
+.btn-bar button{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+    width: 331px;
+    height: 60px;
+    border-radius: 8px;
+    gap: 8px;
 }
