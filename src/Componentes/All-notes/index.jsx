@@ -3,6 +3,7 @@ import imgReact from "../../assets/imgs/img-all-notes/Rectangle.svg"
 import lupa from "../../assets/imgs/img-all-notes/Search.svg"
 import config from "../../assets/imgs/img-all-notes/Setting.svg"
 import perfil from "../../assets/imgs/img-all-notes/Topbar item.svg"
+import tags from "../../assets/imgs/img-all-notes/Tag.svg"
 function AllNotes() {
 
     return (
@@ -48,14 +49,47 @@ function AllNotes() {
                         <p> React Performance Optimization</p>
                         <div className="text-into">
 
-                            <p>Dev</p>
-                            <p>react</p>
+                            <p> <img src={tags} alt="tags" /> Dev</p>
+                            <p> <img src={tags} alt="tags" /> react</p>
 
                         </div>
                         <p>29 Oct 2024</p>
 
+
+
                     </div>
+
+
+
                 </div>
+                <div className="react-itens">
+
+                    <div className="imge-react">
+
+                        <img className="img-react" src={imgReact} alt="img-react" />
+
+                    </div>
+
+                    <div className="text-react">
+
+                        <p> React Performance Optimization</p>
+                        <div className="text-into">
+
+                            <p> <img src={tags} alt="tags" /> Dev</p>
+                            <p> <img src={tags} alt="tags" /> react</p>
+
+                        </div>
+                        <p>29 Oct 2024</p>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
 
 
             </div>
