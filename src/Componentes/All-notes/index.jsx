@@ -116,45 +116,44 @@ function AllNotes() {
                     </div>
                 </div>
 
-                <div className="btn">
 
-                    <button className="btn-create" onClick={onCreateNote}
-                    > + Create New Notes
-                    </button>
+                <button className="btn-create" onClick={onCreateNote}
+                > + Create New Notes
+                </button>
 
-                    <div className="notes_list">
+                <div />
 
-                        {notes.map(note => (
+                <div className="notes_list">
 
-                            <div className="react-itens">
+                    {notes.map(note => (
 
-                                <div className="imge-react">
+                        <div className="react-itens">
 
-                                    <img className="img-react" src={imgReact} alt="img-react" />
+                            <div className="imge-react">
 
-                                </div>
-
-                                <div className="text-react">
-
-                                    <p>{note.title}</p>
-                                    <div className="text-into">
-
-                                        <p> <img src={tags} alt="tags" /> Dev</p>
-                                        <p> <img src={tags} alt="tags" /> react</p>
-
-                                    </div>
-                                    <p>29 Oct 2024</p>
-
-
-
-                                </div>
+                                <img className="img-react" src={imgReact} alt="img-react" />
 
                             </div>
 
-                        ))}
-                    </div>
+                            <div className="text-react">
 
+                                <p>{note.title}</p>
+                                <div className="text-into">
+
+                                    <p> <img src={tags} alt="tags" /> Dev</p>
+                                    <p> <img src={tags} alt="tags" /> react</p>
+
+                                </div>
+                                <p>29 Oct 2024</p>
+
+                            </div>
+
+                        </div>
+
+                    ))}
                 </div>
+
+
 
 
             </div>
