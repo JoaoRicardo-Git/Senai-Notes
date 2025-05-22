@@ -74,7 +74,7 @@ function Login() {
 
                     </div>
 
-                    <div className="inputs">
+                    <div className="inpt">
 
                         <p>Email Address</p>
 
