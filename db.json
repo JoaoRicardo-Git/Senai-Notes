@@ -1,84 +1,110 @@
 {
   "users": [
     {
-      "id": "5fe0",
+      "id": "e66d",
       "email": "joao@gmail.com",
       "password": "1127"
     },
     {
-      "id": "171b",
+      "id": "e2f9",
       "email": "joao@gmail.com",
       "password": "1127"
     },
     {
-      "id": "317c",
+      "id": "be39",
       "email": "joao@gmail.com",
       "password": "1127"
     },
     {
-      "id": "e090",
+      "id": "c620",
       "email": "joao@gmail.com",
       "password": "1127"
     },
     {
-      "id": "34fb",
+      "id": "ec5f",
       "email": "joao@gmail.com",
       "password": "1127"
     },
     {
-      "id": "da0d",
+      "id": "0251",
       "email": "joao@gmail.com",
       "password": "1127"
+    }
+  ],
+  "Notas": [
+    {
+      "id": "9999",
+      "userId": "1",
+      "title": "React Development J&A",
+      "description": "Texto.",
+      "image": "assets/Rectangle.svg",
+      "tags": [
+        "React",
+        "Node"
+      ]
     },
     {
-      "id": "81ca",
-      "email": "joao@gmail.com",
-      "password": "1127"
+      "id": "4478",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:40:46.144Z"
     },
     {
-      "id": "ea71",
-      "email": "joao@gmail.com",
-      "password": "1127"
+      "id": "6676",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:40:51.956Z"
     },
     {
-      "id": "cf06",
-      "email": "joao@gmail.com",
-      "password": "1127"
+      "id": "f880",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:42:08.307Z"
     },
     {
-      "id": "171e",
-      "email": "joao@gmail.com",
-      "password": "1127"
+      "id": "ca4f",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:42:33.006Z"
     },
     {
-      "id": "9186",
-      "email": "joao@gmail.com",
-      "password": "1127"
+      "id": "4b28",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:44:49.352Z"
     },
     {
-      "id": "4905",
-      "email": "joao@gmail.com",
-      "password": "1127"
+      "id": "d9c4",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:45:03.346Z"
     },
     {
-      "id": "ef6c",
-      "email": "joao@gmail.com",
-      "password": "1127"
-    },
-    {
-      "id": "8e27",
-      "email": "joao@gmail.com",
-      "password": "1127"
-    },
-    {
-      "id": "2f09",
-      "email": "joao@gmail.com",
-      "password": "1127"
-    },
-    {
-      "id": "5f7c",
-      "email": "joao@gmail.com",
-      "password": "1127"
+      "id": "ec2b",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-21T00:47:30.692Z"
     }
   ]
 }
