@@ -28,7 +28,7 @@ function App() {
 
         <Route path="/" element = {<Login/>} ></Route>
         <Route path="/login" element = {<Login/>} ></Route>
-        <Route path="/tela-de-notas" element={isAuthenticated() == true? <TelaDeNotas/> : <Login/>}></Route>
+        <Route path="/tela-de-notas" element = {isAuthenticated() == true? <TelaDeNotas/> : <Login/>}></Route>
         <Route path="*" element = {<h1>Erro 404</h1>} ></Route>
       
       </Routes>
