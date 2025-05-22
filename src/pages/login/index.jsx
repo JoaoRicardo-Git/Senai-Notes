@@ -42,7 +42,7 @@ function Login() {
             localStorage.setItem("meuToken", token)
             localStorage.setItem("meuId", userId)
 
-            window.location.href = "/All Notes"
+            window.location.href = "/tela-de-notas"
 
         } else {
 
@@ -74,7 +74,7 @@ function Login() {
 
                     </div>
 
-                    <div className="inpt">
+                    <div className="inpt-p">
 
                         <p>Email Address</p>
 

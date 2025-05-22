@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/login";
 import TelaDeNotas from "./pages/tela de notas";
 
+
+
 function App() {
 
   const isAuthenticated = () => {
@@ -23,16 +25,16 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      
-      <Routes>
 
-        <Route path="/" element = {<TelaDeNotas/>} ></Route>
-        {/* <Route path="/login" element = {<Login/>} ></Route> */}
-        <Route path="/tela de notas" element = {<TelaDeNotas/>} ></Route>
-        {/* <Route path="*" element = {<h1>Erro 404</h1>} ></Route> */}
-      
-      </Routes>
-      
+        <Routes>
+
+          <Route path="/" element={<Login/>} ></Route>
+          <Route path="/login" element={<Login/>} ></Route>
+          <Route path="/tela-de-notas" element={isAuthenticated() == true? <TelaDeNotas/> : <Login/>}></Route>
+          <Route path="*" element={<h1>Erro 404</h1>} ></Route>
+
+        </Routes>
+
       </BrowserRouter>
     </>
   )
