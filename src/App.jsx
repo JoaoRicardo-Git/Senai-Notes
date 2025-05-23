@@ -25,7 +25,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Routes>
 
       <Routes>
 
@@ -37,6 +36,7 @@ function App() {
       </Routes>
       
       </BrowserRouter>
+
     </>
   )
 }

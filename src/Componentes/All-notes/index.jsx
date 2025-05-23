@@ -39,11 +39,11 @@ function AllNotes({ enviarNota }) {
     const clickNote = (note) =>{
 
         setNoteSelecionado(note);
-        console.log(note);
-
+  
         enviarNota(note);
 
     }
+
     const getNotes = async () => {
 
         let response = await fetch("http://localhost:3000/Notas", {
@@ -57,7 +57,7 @@ function AllNotes({ enviarNota }) {
         if (response.ok == true) {
 
             let json = await response.json();
-            let userId = localStorage.getItem("meuId")
+            // let userId = localStorage.getItem("meuId")
             // json = json.filter(chat => chat.userId == userId);
 
             setNotes(json)
@@ -145,7 +145,7 @@ function AllNotes({ enviarNota }) {
 
                     {notes.map(note => (
 
-                        <div className="react-itens">
+                        <div className="react-itens" onClick={() => clickNote(note)}>
 
                             <div className="imge-react">
 

@@ -18,7 +18,7 @@ function TelaInfo({recebeNota}) {
         if (recebeNota) {
 
             setTitle(recebeNota.title);
-            setTags(recebeNota.tags);
+            setTags(recebeNota.tags?.join(", "));
             setDescription(recebeNota.description);
 
         }
@@ -34,7 +34,7 @@ function TelaInfo({recebeNota}) {
             body: JSON.stringify({
 
                 userId: "1",                          // ID fixo de usuário por enquanto
-                title: selectedNote.title,               // Título padrão
+                title: selectedNote.title.JA,               // Título padrão
                 description: selectedNote.description, // Descrição padrão
                 tags: [],                             // Sem tags iniciais
                 image: "assets/sample.png",           // Imagem padrão
