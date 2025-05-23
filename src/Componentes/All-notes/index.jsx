@@ -104,7 +104,9 @@ function AllNotes() {
                 <div className="cabecalho">
 
                     <h1 className="title-all" > All Notes</h1>
+
                     <div className="inpt-itens">
+
                         <div className="inpt">
 
                             <img src={lupa} alt="lupa" />
@@ -138,6 +140,7 @@ function AllNotes() {
                             <div className="text-react">
 
                                 <p>{note.title}</p>
+                                
                                 <div className="text-into">
 
                                     <p> <img src={tags} alt="tags" /> Dev</p>

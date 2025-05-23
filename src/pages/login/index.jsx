@@ -68,7 +68,9 @@ function Login() {
                 <div className="painel-central">
 
                     <img src={Logo} alt="logo-login" />
+
                     <div className="text">
+
                         <h1> Welcome to Note </h1>
                         <p>Please log in to continue</p>
 
@@ -80,18 +82,25 @@ function Login() {
 
                         <input type="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="email@exaple.com" />
 
+
                         <div className="itens">
+
                             <p className="pass">Password</p>
+
                             <a href="">Forgot</a>
+
                         </div>
 
                         <input type="password" valuee={password} onChange={event => setPassword(event.target.value)} />
+
                     </div>
 
                     <button className="btn-login" onClick={() => onLoginClick()}>Login</button>
 
                     <div className="criar">
+                        
                         <p>No account yet?</p>
+
                         <a href="">Sign Up</a>
                     </div>
 

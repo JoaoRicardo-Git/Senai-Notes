@@ -63,14 +63,16 @@
 
 }
 
-.inputs input {
+.inpt input {
 
     width: 444px;
     height: 42px;
     border-radius: 5px;
     padding: 4px;
+    flex-direction: column;
 
 }
+
 
 .itens {
     display: flex;
