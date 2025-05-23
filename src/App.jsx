@@ -26,6 +26,8 @@ function App() {
     <>
       <BrowserRouter>
 
+      <Routes>
+
         <Route path="/" element = {<Login/>} ></Route>
         <Route path="/login" element = {<Login/>} ></Route>
         <Route path="/tela-de-notas" element = {isAuthenticated() == true? <TelaDeNotas/> : <Login/>}></Route>

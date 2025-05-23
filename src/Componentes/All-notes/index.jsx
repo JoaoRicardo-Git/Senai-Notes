@@ -9,13 +9,17 @@ import tags from "../../assets/imgs/img-all-notes/Tag.svg"
 import { useEffect, useState } from "react"
 
 
-function AllNotes() {
+function AllNotes({ enviarNota }) {
+
+    const [atualizarLista, setAtualizarLista] = useState(0);
+
+    const [noteSelecionado, setNoteSelecionado] = useState(null);
 
     const [notes, setNotes] = useState([]);
 
     useEffect(() => {
         getNotes();
-    }, [])
+    }, []);
 
     //     // Recarrega as notas sempre que a tag selecionada mudar
     //   useEffect(() => { 
@@ -32,7 +36,14 @@ function AllNotes() {
     //     getNotes(); 
     //   }, [atualizarLista]);
 
+    const clickNote = (note) =>{
 
+        setNoteSelecionado(note);
+        console.log(note);
+
+        enviarNota(note);
+
+    }
     const getNotes = async () => {
 
         let response = await fetch("http://localhost:3000/Notas", {
@@ -101,6 +112,13 @@ function AllNotes() {
 
             <div className="right-l">
 
+                <noteSelecionado
+                noteSelecionado={noteSelecionado}
+                aoFecharNota={() => {
+                    setNoteSelecionado(null);
+                    atualizarLista(setAtualizarLista + 1);
+                }}/>
+
                 <div className="cabecalho">
 
                     <h1 className="title-all" > All Notes</h1>
@@ -126,7 +144,7 @@ function AllNotes() {
 
                         {notes.map(note => (
 
-                            <div className="react-itens">
+                            <div className="react-itens" onClick={() => clickNote(note)}>
 
                                 <div className="imge-react">
 

@@ -4,13 +4,58 @@ import "../../assets/styles/global.css"
 import tag from "../../assets/imgs/Imgs Left-panel/Tag.svg"
 import imgTema from "../../assets/imgs/imgs tela-info/ImgsTema.png"
 import imgTime from "../../assets/imgs/imgs tela-info/Circle Clock.svg"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-function TelaInfo() {
+function TelaInfo({recebeNota}) {
 
     const [title, setTitle] = useState("");
     const [tags, setTags] = useState("");
     const [description, setDescription] = useState("");
+    const [selectedNote, setSelectedNote] = useState(null);
+
+    useEffect(() => {
+
+        if (recebeNota) {
+
+            setTitle(recebeNota.title);
+            setTags(recebeNota.tags);
+            setDescription(recebeNota.description);
+
+        }
+
+    }, [recebeNota]);
+
+    const onSaveNote = async () => {
+
+        const response = await fetch("http://localhost:3000/Notas" + selectedNote.id, {
+
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+
+                userId: "1",                          // ID fixo de usuário por enquanto
+                title: selectedNote.title,               // Título padrão
+                description: selectedNote.description, // Descrição padrão
+                tags: [],                             // Sem tags iniciais
+                image: "assets/sample.png",           // Imagem padrão
+                date: new Date().toISOString()
+
+            })
+
+        });
+
+        if (response.ok) {
+
+            alert("Anotacao criada com sucesso!");
+
+        } else {
+
+            alert("erro na criacao da nota, tente de novo.")
+
+        }
+
+
+    }
 
     return (
 
@@ -68,7 +113,7 @@ function TelaInfo() {
 
                         <div className='bnts'>
 
-                            <button className='bntSave'>Save Note</button>
+                            <button className='bntSave' onClick={onSaveNote}>Save Note</button>
 
                             <button className='bntCancel'>Cancel</button>
 
