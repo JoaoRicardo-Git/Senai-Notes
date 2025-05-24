@@ -63,13 +63,12 @@
 
 }
 
-.inpt input {
-
+.input-itens {
     width: 444px;
     height: 42px;
     border-radius: 5px;
     padding: 4px;
-    flex-direction: column;
+
 
 }
 

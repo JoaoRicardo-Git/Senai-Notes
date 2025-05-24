@@ -76,11 +76,11 @@ function Login() {
 
                     </div>
 
-                    <div className="inpt">
+                    <div className="inpt-login">
 
                         <p>Email Address</p>
 
-                        <input type="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="email@exaple.com" />
+                        <input className="input-itens" type="email" value={email} onChange={event => setEmail(event.target.value)} placeholder="email@exaple.com" />
 
 
                         <div className="itens">
@@ -91,7 +91,7 @@ function Login() {
 
                         </div>
 
-                        <input type="password" valuee={password} onChange={event => setPassword(event.target.value)} />
+                        <input className="input-itens" type="password" valuee={password} onChange={event => setPassword(event.target.value)} />
 
                     </div>
 

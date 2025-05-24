@@ -85,7 +85,7 @@
 
 }
 
-.inpt {
+.inpt-all {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 5px;
@@ -94,7 +94,8 @@
     align-items: center;
 }
 
-.inpt input {
+.inpt-all-n {
+    
     border: none;
 }
 
