@@ -3,7 +3,7 @@ import "./allnotes.css"
 import imgReact from "../../assets/imgs/img-all-notes/Rectangle.svg"
 import lupa from "../../assets/imgs/img-all-notes/Search.svg"
 import config from "../../assets/imgs/img-all-notes/Setting.svg"
-import perfil from "../../assets/imgs/img-all-notes/Topbar item.svg"
+import perfil from "../../assets/imgs/img-all-notes/Topbar-Item.svg"
 import tags from "../../assets/imgs/img-all-notes/Tag.svg"
 
 import { useEffect, useState } from "react"
