@@ -1,10 +1,10 @@
-import "./LeftPanel.css"
+import "./leftPanel.css"
 import "../../assets/styles/global.css"
 
-import Logo from "../../assets/imgs/Imgs Left-panel/LogoWrapper.svg"
-import imgCasa from "../../assets/imgs/Imgs Left-panel/Home.svg"
-import imgArquivo from "../../assets/imgs/Imgs Left-panel/Archive.svg"
-import tag from "../../assets/imgs/Imgs Left-panel/Tag.svg"
+import Logo from "../../assets/imgs/Imgs-Left-panel/LogoWrapper.svg"
+import imgCasa from "../../assets/imgs/Imgs-Left-panel/Home.svg"
+import imgArquivo from "../../assets/imgs/Imgs-Left-panel/Archive.svg"
+import tag from "../../assets/imgs/Imgs-Left-panel/Tag.svg"
 
 function LeftPanel() {
 
