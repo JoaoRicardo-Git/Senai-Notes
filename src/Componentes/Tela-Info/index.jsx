@@ -1,7 +1,7 @@
 import './telaInfo.css'
 import "../../assets/styles/global.css"
 
-import tag from "../../assets/imgs/Imgs Left-panel/Tag.svg"
+import tag from "../../assets/imgs/Imgs-Left-panel/Tag.svg"
 import imgTema from "../../assets/imgs/imgs tela-info/ImgsTema.png"
 import imgTime from "../../assets/imgs/imgs tela-info/Circle Clock.svg"
 import { useEffect, useState } from 'react'
@@ -18,7 +18,7 @@ function TelaInfo({recebeNota}) {
         if (recebeNota) {
 
             setTitle(recebeNota.title);
-            setTags(recebeNota.tags);
+            setTags(recebeNota.tags?.join(", "));
             setDescription(recebeNota.description);
 
         }
@@ -34,7 +34,7 @@ function TelaInfo({recebeNota}) {
             body: JSON.stringify({
 
                 userId: "1",                          // ID fixo de usuário por enquanto
-                title: selectedNote.title,               // Título padrão
+                title: selectedNote.title.JA,               // Título padrão
                 description: selectedNote.description, // Descrição padrão
                 tags: [],                             // Sem tags iniciais
                 image: "assets/sample.png",           // Imagem padrão

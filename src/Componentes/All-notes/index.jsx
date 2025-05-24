@@ -3,7 +3,7 @@ import "./allnotes.css"
 import imgReact from "../../assets/imgs/img-all-notes/Rectangle.svg"
 import lupa from "../../assets/imgs/img-all-notes/Search.svg"
 import config from "../../assets/imgs/img-all-notes/Setting.svg"
-import perfil from "../../assets/imgs/img-all-notes/Topbar item.svg"
+import perfil from "../../assets/imgs/img-all-notes/Topbar-Item.svg"
 import tags from "../../assets/imgs/img-all-notes/Tag.svg"
 
 import { useEffect, useState } from "react"
@@ -39,11 +39,11 @@ function AllNotes({ enviarNota }) {
     const clickNote = (note) =>{
 
         setNoteSelecionado(note);
-        console.log(note);
-
+  
         enviarNota(note);
 
     }
+
     const getNotes = async () => {
 
         let response = await fetch("http://localhost:3000/Notas", {
@@ -57,7 +57,7 @@ function AllNotes({ enviarNota }) {
         if (response.ok == true) {
 
             let json = await response.json();
-            let userId = localStorage.getItem("meuId")
+            // let userId = localStorage.getItem("meuId")
             // json = json.filter(chat => chat.userId == userId);
 
             setNotes(json)
@@ -147,7 +147,7 @@ function AllNotes({ enviarNota }) {
 
                     {notes.map(note => (
 
-                        <div className="react-itens">
+                        <div className="react-itens" onClick={() => clickNote(note)}>
 
                             <div className="imge-react">
 
