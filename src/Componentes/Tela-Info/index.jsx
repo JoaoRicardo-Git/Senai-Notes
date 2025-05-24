@@ -1,7 +1,7 @@
 import './telaInfo.css'
 import "../../assets/styles/global.css"
 
-import tag from "../../assets/imgs/Imgs Left-panel/Tag.svg"
+import tag from "../../assets/imgs/Imgs-Left-panel/Tag.svg"
 import imgTema from "../../assets/imgs/imgs tela-info/ImgsTema.png"
 import imgTime from "../../assets/imgs/imgs tela-info/Circle Clock.svg"
 import { useEffect, useState } from 'react'
