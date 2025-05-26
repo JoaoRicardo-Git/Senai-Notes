@@ -25,10 +25,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-<<<<<<< HEAD
-      
-=======
->>>>>>> c7cc175e1673f099793a2f95a1dad9dfac47e72e
 
       <Routes>
 
