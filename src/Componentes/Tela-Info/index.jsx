@@ -13,8 +13,13 @@ function TelaInfo({ recebeNota }) {
     const [description, setDescription] = useState("");
     const [selectedNote, setSelectedNote] = useState(null);
 
+<<<<<<< HEAD
     const [image, setImage] = useState(null);
     const [imageURL, setImageURL] = useState(null);
+=======
+    // const[ image,setImage] =useState(null);
+    // const[imageURL, setImageURL] =useState ( null);
+>>>>>>> 36bd5bc293e68991d2d0802185ed3e94e03364f2
 
     useEffect(() => {
 
@@ -59,6 +64,12 @@ function TelaInfo({ recebeNota }) {
         setImageURL(URL.createObjectURL(arquivo));
 
     }
+    // const aoAdicionarImagen = (event) => {
+    //     const arquivo = event.target.files[0];
+    //     console.log ("arquivo", arquivo);
+    //     setImage(arquivo);
+    //     setImageURL(URL.createObjectURL(arquivo));
+    // }
 
     return (
 
@@ -68,6 +79,7 @@ function TelaInfo({ recebeNota }) {
 
                 <div className="telaInfo-up">
 
+<<<<<<< HEAD
                     <div>
                         <label>
 
@@ -76,6 +88,18 @@ function TelaInfo({ recebeNota }) {
 
                         </label>
                     </div>
+=======
+                    {/* <label >
+
+                    <img className='ImgTema' src={imageURL || imgTema} alt="Imagem do Tema" />
+
+                        <input onChange={event => aoAdicionarImagen(event)} className='file-input' type="file" /> */}
+                        {/* colocar display block se ja  estiver estilizado
+
+                    </label> */}
+
+
+>>>>>>> 36bd5bc293e68991d2d0802185ed3e94e03364f2
 
                     <input
                         className="createTitle"

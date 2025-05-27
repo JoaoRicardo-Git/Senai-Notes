@@ -11,8 +11,8 @@ function MenuBar() {
 
                 <div className="btn-bar">
 
-                    <butto<img src={archive} alt="archive-img" />Unarchive Note </button>
-                    <buttn>on> <img src={claer} alt="delete-img" /> Delete Note </button>
+                    <button className="bar-button" ><img src={archive} alt="archive-img" />Unarchive Note </button>
+                    <button className="bar-button"> <img src={claer} alt="delete-img" /> Delete Note </button>
 
                 </div>
 

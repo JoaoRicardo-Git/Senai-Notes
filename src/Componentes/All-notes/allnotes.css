@@ -179,7 +179,9 @@
     gap: 10px;
 }
 
-.btn-bar button{
+
+.bar-button{
+    background-color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;

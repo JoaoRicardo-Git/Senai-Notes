@@ -192,6 +192,14 @@
     cursor: pointer;
 
 }
+/* .file-input{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    
+} */
 
 .file_input {
 

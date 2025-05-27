@@ -185,3 +185,47 @@ function AllNotes({ enviarNota }) {
 }
 
 export default AllNotes;
+// const onSaveNote = async () => {
+//     const response = await fetch(`http://localhost:3000/notes/${notaSelecionada.id}`, {
+//       method: "PUT",
+//       headers: { "Content-Type": "application/json" },
+//       body: JSON.stringify({
+//         ...notaSelecionada,
+//         title,
+//         description,
+//         tags: tags.split(",").map(t => t.trim()),
+//         image: "assets/sample.png", // temporário
+//         date: new Date().toISOString()
+//       })
+//     });
+
+//     if (response.ok) {
+//       alert("Sucesso!");  json nao salva imagens formData abaixo segue o exemplo
+//     } else {
+//       alert("Erro!");
+//     }
+//   }
+
+// ============================================================================================================================================
+
+//   const onSaveNoteImg = async () => {
+    
+//     let formData = new FormData();
+
+//     formData.append("titulo", title);
+//     formData.append("description", description);
+//     formData.append("tags", tags);
+//     formData.append("image", image);
+
+//     const response = await fetch(`http://localhost:3000/notes/${notaSelecionada.id}`, {
+//       method: "PUT",
+//       headers: {},
+//       body: formData
+//     });
+
+//     if (response.ok) {
+//       alert("Sucesso!");
+//     } else {
+//       alert("Erro!");
+//     }
+//   }
