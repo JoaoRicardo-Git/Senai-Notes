@@ -6,12 +6,15 @@ import imgTema from "../../assets/imgs/imgs tela-info/ImgsTema.png"
 import imgTime from "../../assets/imgs/imgs tela-info/Circle Clock.svg"
 import { useEffect, useState } from 'react'
 
-function TelaInfo({recebeNota}) {
+function TelaInfo({ recebeNota }) {
 
     const [title, setTitle] = useState("");
     const [tags, setTags] = useState("");
     const [description, setDescription] = useState("");
     const [selectedNote, setSelectedNote] = useState(null);
+
+    // const[ image,setImage] =useState(null);
+    // const[imageURL, setImageURL] =useState ( null);
 
     useEffect(() => {
 
@@ -56,6 +59,12 @@ function TelaInfo({recebeNota}) {
 
 
     }
+    // const aoAdicionarImagen = (event) => {
+    //     const arquivo = event.target.files[0];
+    //     console.log ("arquivo", arquivo);
+    //     setImage(arquivo);
+    //     setImageURL(URL.createObjectURL(arquivo));
+    // }
 
     return (
 
@@ -65,7 +74,16 @@ function TelaInfo({recebeNota}) {
 
                 <div className="telaInfo-up">
 
-                    <img className='ImgTema' src={imgTema} alt="Imagem do Tema" />
+                    {/* <label >
+
+                    <img className='ImgTema' src={imageURL || imgTema} alt="Imagem do Tema" />
+
+                        <input onChange={event => aoAdicionarImagen(event)} className='file-input' type="file" /> */}
+                        {/* colocar display block se ja  estiver estilizado
+
+                    </label> */}
+
+
 
                     <input
                         className="createTitle"

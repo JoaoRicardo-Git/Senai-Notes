@@ -31,25 +31,22 @@
       "password": "1127"
     },
     {
-<<<<<<< HEAD
       "id": "088d",
-=======
-      "id": "4e9e",
->>>>>>> c7cc175e1673f099793a2f95a1dad9dfac47e72e
       "email": "joao@gmail.com",
       "password": "1127"
     },
     {
-<<<<<<< HEAD
       "id": "a0a9",
-=======
-      "id": "c93a",
       "email": "joao@gmail.com",
       "password": "1127"
     },
     {
-      "id": "52f6",
->>>>>>> c7cc175e1673f099793a2f95a1dad9dfac47e72e
+      "id": "c041",
+      "email": "joao@gmail.com",
+      "password": "1127"
+    },
+    {
+      "id": "c46c",
       "email": "joao@gmail.com",
       "password": "1127"
     }
@@ -71,7 +68,6 @@
       "description": "Escreva aqui sua descrição",
       "tags": [],
       "image": "assets/sample.png",
-<<<<<<< HEAD
       "date": "2025-05-22T23:32:58.116Z"
     },
     {
@@ -91,9 +87,42 @@
       "tags": [],
       "image": "assets/sample.png",
       "date": "2025-05-24T00:46:22.047Z"
-=======
-      "date": "2025-05-23T22:59:41.941Z"
->>>>>>> c7cc175e1673f099793a2f95a1dad9dfac47e72e
+    },
+    {
+      "id": "db93",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-26T22:23:39.916Z"
+    },
+    {
+      "id": "5472",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-26T22:23:57.901Z"
+    },
+    {
+      "id": "57aa",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-26T22:24:00.535Z"
+    },
+    {
+      "id": "1b6f",
+      "userId": "1",
+      "title": "Nova anotação",
+      "description": "Escreva aqui sua descrição",
+      "tags": [],
+      "image": "assets/sample.png",
+      "date": "2025-05-27T00:17:16.783Z"
     }
   ]
 }
