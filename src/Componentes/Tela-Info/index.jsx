@@ -6,12 +6,15 @@ import imgTema from "../../assets/imgs/imgs tela-info/ImgsTema.png"
 import imgTime from "../../assets/imgs/imgs tela-info/Circle Clock.svg"
 import { useEffect, useState } from 'react'
 
-function TelaInfo({recebeNota}) {
+function TelaInfo({ recebeNota }) {
 
     const [title, setTitle] = useState("");
     const [tags, setTags] = useState("");
     const [description, setDescription] = useState("");
     const [selectedNote, setSelectedNote] = useState(null);
+
+    const [image, setImage] = useState(null);
+    const [imageURL, setImageURL] = useState(null);
 
     useEffect(() => {
 
@@ -26,34 +29,34 @@ function TelaInfo({recebeNota}) {
     }, [recebeNota]);
 
     const onSaveNote = async () => {
-
-        const response = await fetch("http://localhost:3000/Notas" + selectedNote.id, {
-
-            method: "PUT",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-
-                userId: "1",                          // ID fixo de usuário por enquanto
-                title: selectedNote.title.JA,               // Título padrão
-                description: selectedNote.description, // Descrição padrão
-                tags: [],                             // Sem tags iniciais
-                image: "assets/sample.png",           // Imagem padrão
-                date: new Date().toISOString()
-
-            })
-
+        const response = await fetch(`http://localhost:3000/notes/${selectedNote.id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ...selectedNote,
+            title,
+            description,
+            tags: tags.split(",").map(t => t.trim()),
+            image: "assets/sample.png", // temporário
+            date: new Date().toISOString()
+          })
         });
-
+    
         if (response.ok) {
-
-            alert("Anotacao criada com sucesso!");
-
+          alert("Sucesso!");
         } else {
-
-            alert("erro na criacao da nota, tente de novo.")
-
+          alert("Erro!");
         }
+      }
+    
+    const aoAdicionarImagem = (event) => {
 
+        const arquivo = event.target.files[0];
+
+        console.log ("arquivo", arquivo);
+
+        setImage(arquivo);
+        setImageURL(URL.createObjectURL(arquivo));
 
     }
 
@@ -65,7 +68,14 @@ function TelaInfo({recebeNota}) {
 
                 <div className="telaInfo-up">
 
-                    <img className='ImgTema' src={imgTema} alt="Imagem do Tema" />
+                    <div>
+                        <label>
+
+                            <img className='ImgTema' src={imageURL || imgTema} alt="Imagem do Tema" />
+                            <input onChange={event => aoAdicionarImagem(event)} className='file_input' type="file" />
+
+                        </label>
+                    </div>
 
                     <input
                         className="createTitle"
